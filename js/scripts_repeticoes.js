@@ -83,6 +83,29 @@ const pessoas = [
     {nome: 'João Grilo', idade: 32, renda:80},
 ]
 
+//MANIPULANDO ARRAY
+//ADICIONAR ELEMENTOS NO ARRAY
+pessoas.push({nome: 'Magnólia', idade: 32, renda:3500})
+pessoas.unshift({nome: 'Joerdison', idade:36, renda: 100000})
+
+//SPLICE PARA ADICIONAR EM UMA POSIÇÂO SEM EXCLUIR UM ELEMENTO
+pessoas.splice(3,0,{nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE ADICIONA EM UMA POSIÇÂO E NESSE EXEMPLO EXCLUI MAIS DOIS ELEMENTOS A PARTIR DA POSIÇÂO(INDÌCE) INFORMADO
+pessoas.splice(3,2,{nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE EXCLUI UMA POSÇÃO E NESSE EXEMPLO EXCLUI APENAS O ELEMNTO DA POSIÇÃO(INDÍCE) INFORMADA
+pessoas.splice(1,0)
+
+//SLIPECE EXCLUI DOIS ELEMENTOS A PARTIR DA POSIÇÃO(INDÍCE) INFORMADA
+pessoas.splice(2,2)
+
+//EXCLUIR O ÚTIMO ELEMENTO DO ARRAY
+pessoas.pop()
+
+//EXIBIDO A QUANTIDAD DE ELEMENTOS EM UM ARRAY
+    console.log(' TOTAL DE ELEMNTOS NO ARRAY pessoa s==== >',pessoas.length)
+
 //LISTANDO OBJETO LITERAL PELO FOR
 const divListaObjFor = document.querySelector('#div-listaobj-for')
 
